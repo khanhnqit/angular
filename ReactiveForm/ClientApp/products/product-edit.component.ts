@@ -6,6 +6,7 @@ import { FormBuilder, FormGroup, FormControl, FormArray, Validators, FormControl
 @Component({
     template: require("./product-edit.component.html")
 })
+
 export class ProductEditComponent implements OnInit, AfterViewInit, OnDestroy {
     @ViewChildren(FormControlName, {read: ElementRef}) inputElements: ElementRef[];
     product: MyProduct;
